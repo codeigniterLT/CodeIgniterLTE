@@ -4,39 +4,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*
 |--------------------------------------------------------------------------
-| AUTO JS & CSS FILES - Added by CodeIgniterLT
-|--------------------------------------------------------------------------
-|
-| This automatically loads defauls JS, CSS files for rendering
-|
-| You are able to load additional required CSS/JS files for each page in Controllers
-| See example in Dashboard Controller
-|
-| Addional (optional JS/CSS) files loaded via add_js(), add_css()
-| and including functions:
-| put_headers() - top of pages, for css files in general
-| put_footers() - bottom of pages, for js files
-|
-| These functions are provided in helpers/assets_helper (automatically loaded in autoload.php)
-|
-| Ensure paths to files are correctly provided in array()
-|
-*/
-$config['auto_css'] = array(
-						APPPATH.'third_party/AdminLTE/bootstrap/css/bootstrap.css',
-						APPPATH.'third_party/Font-Awesome/css/font-awesome.min.css',
-						APPPATH.'third_party/Ionicons/css/ionicons.min.css',
-						APPPATH.'third_party/AdminLTE/dist/css/AdminLTE.min.css',
-						APPPATH.'third_party/AdminLTE/dist/css/skins/_all-skins.min.css',
-						);
-$config['auto_js'] = array(
-						APPPATH.'third_party/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js',
-						APPPATH.'third_party/AdminLTE/bootstrap/js/bootstrap.min.js',
-						APPPATH.'third_party/AdminLTE/dist/js/app.min.js',
-						);
-
-/*
-|--------------------------------------------------------------------------
 | Base Site URL
 |--------------------------------------------------------------------------
 |
@@ -57,7 +24,40 @@ $config['auto_js'] = array(
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'http://localhost/CodeIgniterLTE/';
+
+/*
+|--------------------------------------------------------------------------
+| AUTO JS & CSS FILES - Added by CodeIgniterLT
+|--------------------------------------------------------------------------
+|
+| This automatically loads defauls JS, CSS files for rendering
+|
+| You are able to load additional required CSS/JS files for each page in Controllers
+| See example in Dashboard Controller
+|
+| Addional (optional JS/CSS) files loaded via add_js(), add_css()
+| and including functions:
+| put_headers() - top of pages, for css files in general
+| put_footers() - bottom of pages, for js files
+|
+| These functions are provided in helpers/assets_helper (automatically loaded in autoload.php)
+|
+| Ensure paths to files are correctly provided in array()
+|
+*/
+$config['auto_css'] = array(
+						'assets/AdminLTE/bootstrap/css/bootstrap.css',
+						'assets/Font-Awesome/css/font-awesome.min.css',
+						'assets/Ionicons/css/ionicons.min.css',
+						'assets/AdminLTE/dist/css/AdminLTE.min.css',
+						'assets/AdminLTE/dist/css/skins/_all-skins.min.css',
+						);
+$config['auto_js'] = array(
+						'assets/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js',
+						'assets/AdminLTE/bootstrap/js/bootstrap.min.js',
+						'assets/AdminLTE/dist/js/app.min.js',
+						);
 
 /*
 |--------------------------------------------------------------------------
